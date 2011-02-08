@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_background">#FCD924</color>
+    <color name="foreground1">#ff355689</color>
+    <color name="genblack">#000000</color>
+    <color name="genwhite">#FFFFFF</color>
+    <color name="bigletter">#99FFFFFF</color>
+    <color name="bigbg">#BB000000</color>
+    
+</resources>

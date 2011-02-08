@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/home_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/general_bg">
+
+	<LinearLayout
+		style="@style/Title">
+
+       <ImageView
+			style="@style/TitleLogo"
+			android:contentDescription="description_logo"
+			android:src="@drawable/title_logo" />
+
+		<View
+			style="@style/TitleSpring" />
+
+		<ImageView style="@style/TitleSeparator" />
+            
+		<ImageView style="@style/TitleSeparator" />
+		
+		<ImageButton
+			style="@style/TitleButton"
+			android:id="@+id/btn_title_home"
+			android:src="@drawable/title_home"
+			android:onClick="onHomeClick" />
+
+		<ImageView
+			style="@style/TitleSeparator" />
+		<ImageButton
+			style="@style/TitleButton"
+			android:id="@+id/btn_title_cats"
+			android:src="@drawable/categories_title"
+			android:onClick="onCatsClick" />
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/resultDetails"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<com.google.android.maps.MapView
+			android:id="@+id/locationMap"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:clickable="true"
+			android:apiKey="0JQNiHvE28PyiK3NiDz8LeRygI0GWYx-zyyxVgA" />
+	</RelativeLayout>
+	
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_marginTop="-60dip"
+		android:layout_marginBottom="15dp"
+		android:gravity="bottom|center"
+		android:background="@android:color/transparent"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<Button
+			android:id="@+id/callAction"
+			android:text="@string/dial"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/phone_call"
+			android:layout_marginBottom="-4dip"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="false"
+			android:shadowColor="#ffffff"
+			android:shadowRadius="1.5"
+			android:shadowDx="1"
+			android:shadowDy="2" 
+			android:onClick="onCallAction" />
+
+		<Button
+			android:id="@+id/websiteAction"
+			android:text="@string/www"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/www"
+			android:layout_marginBottom="-4dip"
+			android:layout_toLeftOf="@id/callAction"
+			android:layout_centerVertical="false"
+			android:shadowColor="#ffffff"
+			android:shadowRadius="1.5"
+			android:shadowDx="1"
+			android:shadowDy="2" 
+			android:onClick="onWebAction"/>
+
+		<Button
+			android:id="@+id/saveAction"
+			android:text="@string/save"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:drawableLeft="@drawable/save"
+			android:layout_marginBottom="-4dip"
+			android:layout_toLeftOf="@id/websiteAction"
+			android:shadowColor="#ffffff"
+			android:shadowRadius="1.5"
+			android:shadowDx="1"
+			android:shadowDy="2"
+			android:onClick="onSaveAction" />
+	</RelativeLayout>
+</LinearLayout>

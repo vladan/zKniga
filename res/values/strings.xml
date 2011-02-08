@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Златна Книга</string>
+    <string name="save">Зачувај</string>
+    <string name="www">Вебсајт</string>
+    <string name="locationTitle">Локација</string>
+    <string name="searchtitle">Најди</string>
+    <string name="searchButtonText">Барај</string>
+	<string name="geoLocateMe">Лоцирај ме</string>
+	<string name="cityChoice">Избери локација</string>
+	<string name="country">Македонија</string>
+	<string name="offline">Не е пронајдена активна Интернет врска. Обидете се повторно.</string>
+	<string name="pleaseWait">Ве молиме почекајте додека трае пребарувањето...</string>
+	<string name="emptySearchString">Не внесовте термин за пребарување</string>
+	<string name="firstCat">Такси</string>
+	<string name="secondCat">Ресторани</string>
+	<string name="thirdCat">Хотели</string>	
+	<string name="fourthCat">Амбуланти</string>
+	<string name="noresult">Нема</string>
+	<string name="noresult2">Нема резултати</string>
+	<string formatted="false" name="foundLocation">Приближна локација за %s, %s</string>
+	<string name="notFoundLocation">Не е пронајдена приближна локација</string>
+	<string formatted="false" name="address">Адреса: %s</string>
+	<string formatted="false" name="phone">Телефон: %s</string>
+	<string formatted="false" name="location">Град: %s</string>
+	<string formatted="false" name="website">Вебсајт: %s</string>
+	<string name="chooseAccount">Изберете сметка</string>
+	<string name="contactSaved">Контактот %s е успешно зачуван</string>
+	<string name="contactNotSaved">Грешка при зачувувањето на контактот. Обидете се повторно.</string>
+	<string name="choose">Изберете</string>
+	<string name="openwww">Отвори вебсајт</string>
+	<string name="dial">Бирај број</string>
+	<string name="savecontact">Зачувај контакт</string>
+	<string name="showOnMap">Најди на мапа</string>
+	<string name="nextPage">Следна</string>
+	<string name="prevPage">Претходна</string>
+	<string name="version">Верзија: %s</string>
+	<string
+		name="aboutText">Апликацијата Златна Книга за Android е неофицилана верзија за
+		пристап до веб сервисот www.zk.mk. Авторски права и останати салтанати
+		си ги задржува сопсвеникот на веб сајтот. Сите злоупотреби се на Ваша
+		сметка.\n\nавтор: abalalovski@gmail.com</string>
+	
+	<string-array name="citiesArray">
+		<item>Македонија</item>
+		<item>Скопје</item>
+		<item>Битола</item>
+		<item>Прилеп</item>
+		<item>Тетово</item>
+		<item>Охрид</item>
+		<item>Струмица</item>
+		<item>Куманово</item>
+		<item>Гостивар</item>
+		<item>Штип</item>
+		<item>Струга</item>
+		<item>Кавадарци</item>
+		<item>Велес</item>
+		<item>Кочани</item>
+		<item>Гевгелија</item>
+		<item>Кичево</item>
+		<item>Неготино</item>
+		<item>Крива Паланка</item>
+		<item>Берово</item>
+		<item>Богданци</item>
+		<item>Пехчево</item>
+		<item>Стар Дојран</item>
+		<item>Виница</item>
+		<item>Крушево</item>
+		<item>Делчево</item>
+		<item>Демир Хисар</item>
+		<item>Демир Капија</item>
+		<item>Нов Дојран</item>
+		<item>Белград</item>
+		<item>Загреб</item>
+		<item>Софија, Бугарија</item>
+		<item>Радовиш</item>
+		<item>Ресен</item>
+		<item>Пробиштип</item>
+		<item>Кратово</item>
+		<item>Дојран</item>
+		<item>Свети Николе</item>
+		<item>Дебар</item>
+		<item>Македонски Брод</item>
+		<item>Валандово</item>
+		<item>Македонска Каменица</item>
+		<item>Приштина, Косово</item>
+		<item>Софија</item>
+		<item>Тирана</item>
+		<item>Косово</item>
+		<item>Приштина</item>
+		<item>Албанија</item>
+		<item>Rome</item>
+		<item>Ќустендил</item>
+		<item>Пловдив, Бугарија</item>
+	</string-array>	
+</resources>

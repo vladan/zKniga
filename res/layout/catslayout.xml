@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/general_bg">
+
+	<LinearLayout
+		style="@style/Title">
+
+		<ImageView
+			style="@style/TitleLogo"
+			android:contentDescription="description_logo"
+			android:src="@drawable/title_logo" />
+
+		<View
+			style="@style/TitleSpring" />
+
+		<ImageView
+			style="@style/TitleSeparator" />
+		<ImageButton
+			style="@style/TitleButton"
+			android:id="@+id/btn_title_home"
+			android:src="@drawable/title_home"
+			android:onClick="onHomeClick" />
+
+		<ImageView
+			style="@style/TitleSeparator" />
+
+	</LinearLayout>
+	
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="2"
+		android:drawSelectorOnTop="false"
+		android:cacheColorHint="#00000000"
+		android:fastScrollEnabled="true">
+	</ListView>
+
+</LinearLayout>

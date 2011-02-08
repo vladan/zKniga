@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/results_root"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/general_bg">
+
+	<LinearLayout
+		style="@style/Title">
+
+		<ImageView
+			style="@style/TitleLogo"
+			android:contentDescription="description_logo"
+			android:src="@drawable/title_logo" />
+
+		<View
+			style="@style/TitleSpring" />
+
+		<ProgressBar
+			style="@style/SearchProgressIndicator"
+			android:id="@+id/search_progress"
+			android:visibility="gone" />
+			
+		<TextView android:id="@+id/pageCount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="#000000"
+			android:textSize="14sp"
+			android:paddingRight="5dp"
+			android:text="1/1"/>
+
+		<ImageView
+			style="@style/TitleSeparator" />
+		<ImageButton
+			style="@style/TitleButton"
+			android:id="@+id/btn_title_home"
+			android:src="@drawable/title_home"
+			android:onClick="onHomeClick" />
+
+		<ImageView
+			style="@style/TitleSeparator" />
+		<ImageButton
+			style="@style/TitleButton"
+			android:id="@+id/btn_title_cats"
+			android:src="@drawable/categories_title"
+			android:onClick="onCatsClick" />
+	</LinearLayout>
+
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="2"
+		android:drawSelectorOnTop="false"
+		android:cacheColorHint="#00000000">
+	</ListView>
+	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_marginTop="-60dip"
+		android:layout_marginBottom="15dp"
+		android:layout_gravity="bottom|center"
+		android:background="@android:color/transparent"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+	
+	<Button
+		android:id="@+id/prevPage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|bottom"
+		android:layout_alignParentLeft="true"
+		android:shadowColor="#ffffff"
+		android:shadowRadius="1.5"
+		android:shadowDx="1"
+		android:shadowDy="2"
+		android:visibility="gone"
+		android:drawableLeft="@drawable/arrow_left"
+		android:text="@string/prevPage" />
+		
+	<Button
+		android:id="@+id/nextPage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/prevPage"
+		android:shadowColor="#ffffff"
+		android:shadowRadius="1.5"
+		android:shadowDx="1"
+		android:shadowDy="2"
+		android:visibility="gone"
+		android:drawableRight="@drawable/arrow_right"
+		android:text="@string/nextPage" />
+	</RelativeLayout>
+</LinearLayout>
